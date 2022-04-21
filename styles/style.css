@@ -33,8 +33,8 @@
 }
 
 .header__title {
-  margin-left: 64px;
-  width: 730px;
+  margin: 0 0 0 64px;
+  max-width: 730px;
   font-size: 102px;
   line-height: 96px;
   font-weight: 700;
@@ -49,6 +49,11 @@
   font-size: 18px;
   line-height: 25px;
   z-index: 2;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -95,7 +100,7 @@
   margin: 0;
 }
 
-.span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 700;
@@ -105,12 +110,16 @@
   margin: 0 auto 30px;
 }
 
-.two-columns__paragraph_last {
+.two-columns__paragraph:last-child {
   margin: 0;
 }
 
+.digits {
+  margin: 100px auto;
+}
+
 .section-title {
-  margin: 100px auto 20px;
+  margin: 0 auto 20px;
   width: 60%;
   text-align: center;
   line-height: 1.15;
@@ -121,6 +130,7 @@
 .section-subtitle {
   line-height: 34px;
   font-size: 24px;
+  font-weight: normal;
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -132,6 +142,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
 }
 
 .table__cell {
@@ -140,7 +152,7 @@
 }
 
 .table__heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
@@ -164,6 +176,7 @@
   line-height: 51px;
   font-size: 36px;
   margin: 0 auto;
+  font-weight: normal;
 }
 
 .feynman {
@@ -180,9 +193,12 @@
   top: 50%;
   line-height: 51px;
   font-size: 36px;
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .feynman__img {
+  background-image: url("../images/feynman.png");
   position: absolute;
   left: 0;
   bottom: 0;
@@ -192,10 +208,11 @@
 }
 
 .kaufman {
-  background-color: #000;
+  background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
   z-index: -2;
+  padding-top: 100px;
 }
 
 .section-title_theme_dark {
@@ -230,8 +247,7 @@
 
 .footer {
   min-height: 350px;
-  background-color: #000;
-  overflow: hidden;
+  background-color: #1f1f1f;
   display: flex;
   align-items: stretch;
 }
@@ -278,6 +294,7 @@
   text-decoration: none;
   color: white;
   line-height: 25px;
+  font-size: 16px;
 }
 
 .footer__social-icon {
