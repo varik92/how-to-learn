@@ -23,6 +23,7 @@
   background-size: contain;
   width: 228px;
   height: 32px;
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
@@ -185,6 +186,10 @@
   height: 890px;
   background-color: #f2f2f2;
   z-index: -2;
+  background-image: url("../images/feynman.png");
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 .feynman__link {
@@ -195,16 +200,6 @@
   font-size: 36px;
   color: #2f80ed;
   text-decoration: none;
-}
-
-.feynman__img {
-  background-image: url("../images/feynman.png");
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  width: 867px;
-  height: 637px;
 }
 
 .kaufman {
