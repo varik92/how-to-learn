@@ -1,4 +1,9 @@
 .table__text {
     line-height: 1.2;
     font-size: 18px;
+    margin: 20px 0;
+}
+
+.table__text:nth-last-of-type(1) {
+    margin-bottom: 0;
 }
